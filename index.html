@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kỷ Yếu 5I Tiểu Học Khương Mai 2018 - 2023</title>
+    <meta name="description" content="Kỷ Yếu 5I Tiểu Học Khương Mai 2018 - 2023">
+    <meta name="keywords" content="Yearboook">
+    <meta property="og:site_name" content="Kỷ Yếu 5I Tiểu Học Khương Mai 2018 - 2023">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kỷ Yếu 5I Tiểu Học Khương Mai 2018 - 2023">
+    <meta property="og:url" content="https://moonstudio.site">
+    <meta property="og:description"
+        content="Tuổi học trò là thanh xuân, là những gì trong trẻo, và đẹp đẽ nhất của cuộc đời.">
+    <meta property="og:image" content="https://essda.surge.sh/moonstudio.png">
+    <meta property="og:image:url" content="https://essda.surge.sh/moonstudio.png">
+    <meta property="og:image:secure_url" content="https://essda.surge.sh/moonstudio.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://essda.surge.sh/common/imgs/moon.png">
+    <link href="https://essda.surge.sh/common/fonts/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://essda.surge.sh/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            /* font-family: Arial; */
+            font-family: "comfortaaregular", sans-serif;
+            background-color: #fff;
+            font-size: 18px;
+            font-size: 1.03333rem;
+            color: #000000;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 5px;
+            /* border: 2px solid black;
+                background-color: aqua; */
+        }
+
+        .img-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+        }
+
+        .column img {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .column img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 1200px) {
+            .column {
+                -ms-flex: 33.33%;
+                flex: 33.33%;
+                max-width: 33.33%;
+            }
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 900px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 300px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        #bottom-pagination {
+            display: none;
+            position: fixed;
+            bottom: 55px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            z-index: 100;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        #bottom_selected_image {
+            display: none;
+            position: fixed;
+            bottom: 130px;
+            left: 50%;
+            transform: translateX(-50%);
+            /* width: 50%; */
+            height: 30px;
+            z-index: 100;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: #fff;
+            color: rgb(51,122,185);
+            font-size: 18px;
+            font-family: Google Sans Text;
+            border-radius: 2px;
+        }
+        #bottom_selected_image:hover {
+            color: #23527c;
+            background-color: #eee;
+        }
+        /* larger font size for screens between 480px and 768px */
+        @media only screen and (min-width: 480px) {
+            body {
+                font-size: 15px;
+            }
+        }
+
+        /* even larger font size for screens 768px and wider */
+        @media only screen and (min-width: 768px) {
+            body {
+                font-size: 18px;
+            }
+        }
+
+        @keyframes color-animation {
+            0% {
+                color: red;
+            }
+
+            50% {
+                color: rgb(0, 153, 255);
+            }
+
+            100% {
+                color: green;
+            }
+        }
+
+        /*------------------------------------------------------------------
+        [3.8 Social buttons ]
+        */
+        .footer-social-button {
+            font-size: 14px;
+            text-align: center;
+            background: #ffffff;
+            padding: 10px 0;
+            text-transform: lowercase;
+        }
+
+        .site-dark .footer-social-button {
+            background: #111111;
+        }
+
+        .section-title {
+            text-align: center;
+            padding-top: 60px;
+            position: relative;
+        }
+
+        .section-title:before {
+            content: "";
+            background: url("https://essda.surge.sh/templates/template15/images/sec-title-flower.png") center center/cover no-repeat local;
+            width: 126px;
+            height: 59px;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            top: 0;
+        }
+
+        .section-title h2 {
+            font-family: "dancing_scriptregular", cursive;
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0 0 0.39em;
+        }
+
+        @media (max-width: 991px) {
+            .section-title h2 {
+                font-size: 30px;
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .section-title h2 {
+                font-size: 25px;
+                font-size: 1.66667rem;
+            }
+        }
+
+        .section-title p {
+            font-size: 17px;
+            font-size: 1.13333rem;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 767px) {
+            .section-title p {
+                font-size: 14px;
+                font-size: 0.93333rem;
+            }
+        }
+
+        .section-title-s2 h2 {
+            font-size: 30px;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.4em;
+            margin: 0 0 1em;
+        }
+
+        @media (max-width: 991px) {
+            .section-title-s2 h2 {
+                font-size: 25px;
+                font-size: 1.66667rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .section-title-s2 h2 {
+                font-size: 22px;
+                font-size: 1.46667rem;
+            }
+        }
+
+        .pagination {
+            display: inline-block;
+            padding-left: 0;
+            margin: 20px 0;
+            border-radius: 4px
+        }
+
+        .pagination>li {
+            display: inline
+        }
+
+        .pagination>li>a,
+        .pagination>li>span {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857143;
+            color: #337ab7;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #ddd
+        }
+
+        .pagination>li:first-child>a,
+        .pagination>li:first-child>span {
+            margin-left: 0;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px
+        }
+
+        .pagination>li:last-child>a,
+        .pagination>li:last-child>span {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px
+        }
+
+        .pagination>li>a:focus,
+        .pagination>li>a:hover,
+        .pagination>li>span:focus,
+        .pagination>li>span:hover {
+            z-index: 3;
+            color: #23527c;
+            background-color: #eee;
+            border-color: #ddd
+        }
+
+        .pagination>.active>a,
+        .pagination>.active>a:focus,
+        .pagination>.active>a:hover,
+        .pagination>.active>span,
+        .pagination>.active>span:focus,
+        .pagination>.active>span:hover {
+            z-index: 2;
+            color: #fff;
+            cursor: default;
+            background-color: #337ab7;
+            border-color: #337ab7
+        }
+
+        .pagination>.disabled>a,
+        .pagination>.disabled>a:focus,
+        .pagination>.disabled>a:hover,
+        .pagination>.disabled>span,
+        .pagination>.disabled>span:focus,
+        .pagination>.disabled>span:hover {
+            color: #777;
+            cursor: not-allowed;
+            background-color: #fff;
+            border-color: #ddd
+        }
+
+        .pagination-lg>li>a,
+        .pagination-lg>li>span {
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333
+        }
+
+        .pagination-lg>li:first-child>a,
+        .pagination-lg>li:first-child>span {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px
+        }
+
+        .pagination-lg>li:last-child>a,
+        .pagination-lg>li:last-child>span {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px
+        }
+
+        .pagination-sm>li>a,
+        .pagination-sm>li>span {
+            padding: 5px 10px;
+            font-size: 12px;
+            line-height: 1.5
+        }
+
+        .pagination-sm>li:first-child>a,
+        .pagination-sm>li:first-child>span {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px
+        }
+
+        .pagination-sm>li:last-child>a,
+        .pagination-sm>li:last-child>span {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px
+        }
+
+        a {
+            text-decoration: none;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 90%;  margin: auto; text-align: center; align-items: center; justify-content: center;">
+        <p style="animation: color-animation 0.5s infinite;">Moon Studio-0904951286</p>
+        <div class="section-title">
+            <h2>Kỷ Yếu 5I Tiểu Học Khương Mai 2018 - 2023</h2>
+            <p>"Sau này khi trưởng thành, nhìn lại những tấm hình kỷ yếu, chúng ta sẽ nhớ lại những ngày tháng đáng nhớ
+                và những người bạn đồng hành cùng mình trên con đường tuổi trẻ."</p>
+        </div>
+        <button style="margin: 10px 0 0 0;" onclick="copyArrayToClipboard()">Copy tên ảnh đã chọn</button>
+        <nav aria-label="Page navigation example" style="font-family: Google Sans Text;">
+            <ul class="pagination justify-content-center">
+                <li class="btn-prev-top page-item">
+                    <a class="page-link" href="#" title="Mở trang trước">Trang trước</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" title="Trang hiện tại" id="page-info-top">1</a>
+                </li>
+                <li class="btn-next-top page-item">
+                    <a class="page-link" href="#" title="Mở trang sau">Trang sau</a>
+                </li>
+            </ul>
+        </nav>
+        <button style="margin: 10px 0 0 0;" id="bottom_selected_image" onclick="copyArrayToClipboard()">Copy tên ảnh đã chọn</button>
+        <div class="block-0-1 " id="bottom-pagination" style="font-family: Google Sans Text;">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="btn-prev-bottom page-item">
+                        <a class="page-link" href="#" title="Mở trang trước">Trang trước</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" title="Trang hiện tại" id="page-info-bottom">1</a>
+                    </li>
+                    <li class="btn-next-bottom page-item">
+                        <a class="page-link" href="#" title="Mở trang sau">Trang sau</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+    <script src="https://essda.surge.sh/functions3.js"></script>
+</body>
+</html>
